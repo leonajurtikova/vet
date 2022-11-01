@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.container {
+    width: rem(1170px);
+    max-width: calc(100% - rem(40px));
+    min-height: calc(100vh - rem(82px));
+    margin: 0 auto;
+}
+
+.hamburger-open {
+    overflow-y: hidden;
+}

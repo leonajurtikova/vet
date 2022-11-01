@@ -1,0 +1,41 @@
+.equipment__title {
+  font-size: clamp(1.5rem, 7vw, 2rem);
+  font-weight: 700;
+  font-family: "Arial";
+  text-align: center;
+  color: #048C9F;
+  text-transform: uppercase;
+  margin-top: 1.88rem;
+}
+.equipment__subtitle {
+  font-size: clamp(1rem, 6vw, 1.5rem);
+  font-weight: 700;
+  font-family: "Arial";
+  text-align: center;
+  color: #048C9F;
+  margin: 1.88rem 0 4.06rem 0;
+}
+.equipment__list {
+  display: flex;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 590px) {
+  .equipment__list {
+    gap: 0;
+  }
+}
+.equipment__picture {
+  border-radius: 0.94rem;
+  margin: 0 0 0.63rem 0;
+  width: 100%;
+}
+.equipment__text {
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-weight: 700;
+  font-family: "Arial";
+  text-align: center;
+  color: #048C9F;
+  padding: 0 1.5rem 1.88rem;
+}

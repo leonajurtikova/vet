@@ -1,0 +1,119 @@
+.service {
+    min-height: rem(1170px);
+    &__title {
+        font-size: clamp(rem(24px), 7vw, rem(32px));
+        font-weight: 700;
+        font-family:'Arial';
+        text-align: center;
+        color: $main-text-color;
+        text-transform: uppercase;
+        margin: rem(30px) 0 rem(120px) 0;
+        @media (max-width: $breakpoint-mobile) {
+            margin: rem(30px) 0 rem(60px) 0;
+        }
+    }
+    &__list {
+        display: flex;
+        gap: rem(35px);
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 0 rem(30px) 0;
+    }
+    &__item {
+        max-width: rem(500px);
+        min-height: rem(510px);
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, #f4fcfb, #eefaf9, #e8f8f6, #e1f6f4, #dbf4f1);
+        border-radius: rem(15px);
+        padding-top: rem(24px + 170px);
+        position: relative;
+        &::after {
+            content: "";
+            width: rem(260px);
+            max-width: calc(100% - rem(30px));
+            height: rem(170px);
+            position: absolute;
+            top: rem(24px);
+            left: 50%;
+            transform: translateX(-50%);
+            background-image: url("../img/dermatologie.png");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: contain;
+        }
+        &--endo {
+            &::after {
+                background-image: url("../img/endokrinologie.png");
+            }
+        }
+        &--gastro {
+            &::after {
+                background-image: url("../img/gastroenterologie.png");
+            }
+        }
+        &--gynda {
+            &::after {
+                background-image: url("../img/gynekologie.png");
+            }
+        }
+        &--kardio {
+            &::after {
+                background-image: url("../img/kardiologie.png");
+            }
+        }
+        &--ofta {
+            &::after {
+                background-image: url("../img/oftalmologie.png");
+            }
+        }
+        &--stoma {
+            &::after {
+                background-image: url("../img/stomatologie.png");
+            }
+        }
+        &--respi {
+            &::after {
+                background-image: url("../img/respiratorni_aparat.png");
+            }
+        }
+        &--chirur {
+            &::after {
+                background-image: url("../img/chirurgie.png");
+            }
+        }
+        &--onkol {
+            &::after {
+                background-image: url("../img/onkologie.png");
+            }
+        }
+        &--neur {
+            &::after {
+                background-image: url("../img/neurologie.png");
+            }
+        }
+        &--urol {
+            &::after {
+                background-image: url("../img/urologie.png");
+            }
+        }
+    }
+    &__text {
+        font-size: clamp(rem(16px), 6vw, rem(24px));
+        font-weight: 700;
+        font-family:'Arial';
+        text-align: left;
+        color: $main-text-color;
+        text-transform: uppercase;
+        padding: rem(35px) rem(24px) 0;
+    }
+    &__subtext {
+        font-size: clamp(rem(16px), 7vw, rem(24px));
+        font-weight: 400;
+        font-family:'Arial';
+        text-align: left;
+        line-height: 1.3;
+        color: $main-text-color;
+        padding: rem(24px);
+    }
+}

@@ -1,0 +1,70 @@
+.tariff {
+  background-image: linear-gradient(to bottom, #f4fcfb, #eefaf9, #e8f8f6, #e1f6f4, #dbf4f1);
+  border-radius: 0.94rem;
+  margin-bottom: 1.88rem;
+}
+.tariff__small {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 31.88rem;
+  gap: 0 1.88rem;
+}
+@media (max-width: 590px) {
+  .tariff__small {
+    display: block;
+  }
+}
+.tariff__title {
+  font-size: clamp(1.5rem, 7vw, 2rem);
+  font-weight: 700;
+  font-family: "Arial";
+  text-align: center;
+  color: #048C9F;
+  text-transform: uppercase;
+  margin: 1.88rem 0 7.5rem 0;
+}
+@media (max-width: 590px) {
+  .tariff__title {
+    margin: 1.88rem 0 3.75rem 0;
+  }
+}
+.tariff__subtitle {
+  font-size: clamp(1rem, 6vw, 1.5rem);
+  font-weight: 700;
+  font-family: "Arial";
+  text-align: center;
+  color: #048C9F;
+  text-transform: uppercase;
+  padding: 1.88rem 1.88rem 2.81rem 1.88rem;
+}
+.tariff__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(10, max-content);
+}
+.tariff__list--row {
+  grid-template-columns: 1fr;
+}
+@media (max-width: 590px) {
+  .tariff__list {
+    display: block;
+  }
+}
+.tariff__text {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-weight: 700;
+  font-family: "Arial";
+  text-align: left;
+  line-height: 1.3;
+  color: #048C9F;
+  padding: 0 1.5rem 2px;
+}
+.tariff__subtext {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-weight: 400;
+  font-family: "Arial";
+  text-align: left;
+  color: #048C9F;
+  padding: 0 1.5rem 1.5rem;
+}

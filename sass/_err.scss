@@ -1,0 +1,50 @@
+.error {
+    height: calc(100vh - var(--footerHeight));
+    display: flex;
+    background-image: $main-backgound-color;
+    flex-direction: column;
+    justify-content: space-around;
+    &__title {
+        display: block;
+        font-size: clamp(rem(24px), 14vw, rem(80px));
+        font-weight: 800;
+        font-family:'Arial';
+        text-align: center;
+        color: $third-text-color;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-size: clamp(rem(24px), 8vw, rem(60px));
+        font-weight: 700;
+        font-family:'Arial';
+        text-align: center;
+        color: $third-text-color;
+        text-transform: uppercase;
+    }
+    &__info {
+        font-size: clamp(rem(24px), 10vw, rem(40px));
+        font-weight: 700;
+        font-family:'Arial';
+        text-align: center;
+        color: $third-text-color;
+    }
+    &__subinfo {
+        font-size: clamp(rem(24px), 6vw, rem(40px));
+        font-weight: 700;
+        font-family:'Arial';
+        text-align: center;
+        color: $third-text-color;
+    }
+    &__link {
+        font-size: clamp(rem(24px), 6vw, rem(40px));
+        font-weight: 700;
+        font-family:'Arial';
+        text-align: center;
+        color: $third-text-color;
+        text-decoration: underline;
+        &:hover {
+            color: $main-text-color;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+}

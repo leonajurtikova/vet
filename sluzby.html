@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/allpages.css">
+    <link rel="stylesheet" href="css/sluzby.css">
+    <title>veterinary</title>
+    <link rel="icon" type="image/png" sizes="33x33" href="favicon/favicon.png">
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <div class="container">
+        <header class="menu">
+            <a href="index.html" class="menu__index">
+                <img class="menu__logo" src="img/veterany_logo.svg" alt="logo">
+            </a>
+            <nav class="menu__navigation">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Úvod</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="sluzby.html" class="menu__link">Služby</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="cenik.html" class="menu__link">Ceník</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="vybaveni.html" class="menu__link">Vybavení kliniky</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="klinika.html" class="menu__link">O klinice</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu__hamburger" onclick="hamburger(this)">
+                <span class="menu__effect"></span>
+                <span class="menu__effect"></span>
+                <span class="menu__effect"></span>
+            </div>
+        </header>
+        <section class="service">
+            <h1 class="service__title">Poskytované služby</h1>
+            <ul class="service__list">
+                <li class="service__item">
+                    <h2 class="service__text">Dermatologie</h2>
+                    <p class="service__subtext">Komplexní řešení kožních potíží včetně alergenodiagnostiky, dietních doporučení a desenzibilizace.</p>
+                </li>
+                <li class="service__item service__item--endo">
+                    <h2 class="service__text">Endokrinologie</h2>
+                    <p class="service__subtext">Diagnostické testy, klinická a laboratorní diagnostika endokrinologických onemocnění.</p>
+                </li>
+                <li class="service__item service__item--gastro">
+                    <h2 class="service__text">Gastroenterologie</h2>
+                    <p class="service__subtext">Klinická, laboratorní, sonografická, RTG a CT diagnostika onemocnění trávícího traktu, jater a pankreatu.</p>
+                </li>
+                <li class="service__item service__item--gynda">
+                    <h2 class="service__text">Gynekologie</h2>
+                    <p class="service__subtext">Měření doby krytí, vaginální cytologie, hormonální vyšetření krve, diagnostika březosti, péče o matku a mláďata, asistence při porodu, poporodní péče. Diagnostika a terapie onemocnění pohlavních cest, dělohy a vaječníků.</p>
+                </li>
+                <li class="service__item service__item--kardio">
+                    <h2 class="service__text">Kardiologie</h2>
+                    <p class="service__subtext">Vedení pacientů s chronickým srdečním selháním, dilatační kardiomyopatií. Echokardiologické vyšetření srdce prováděné specialistou.</p>
+                </li>
+                <li class="service__item service__item--ofta">
+                    <h2 class="service__text">Oftalmologie</h2>
+                    <p class="service__subtext">Léčba akutních stavů oka, se zaměřením na nemoci víček, spojivky, rohovky a slzných kanálků, diagnostické barvení, zjištění produkce slz.</p>
+                </li>
+                <li class="service__item service__item--stoma">
+                    <h2 class="service__text">Stomatologie</h2>
+                    <p class="service__subtext">Komplexní péče o chrup, odstranění zubního kamene, extrakce a plombování zubů, péče o dásně.</p>
+                </li>
+                <li class="service__item service__item--respi">
+                    <h2 class="service__text">Respiratorní aparát</h2>
+                    <p class="service__subtext">Klinická, laboratorní, RTG a CT diagnostika onemocnění horních a dolních cest dýchacích, terapie.</p>
+                </li>
+                <li class="service__item service__item--chirur">
+                    <h2 class="service__text">Chirurgie a ortopedie</h2>
+                    <div class="service__subtext">Chirurgické zákroky na měkkých tkáních (ošetření dutin a ran, kastrace, císařské řezy, neprůchodnost střev či močových cest, pyometry, operace víček, operace nádorů a změn na kůži a v podkoží).</p>
+                </li>
+                <li class="service__item service__item--onkol">
+                    <h2 class="service__text">Onkologie</h2>
+                    <p class="service__subtext">Diagnostika a terapie nádorových onemocnění. Biopsie a histologické vyšetření vzorků tkání.</p>
+                </li>
+                <li class="service__item service__item--neur">
+                    <h2 class="service__text">Neurologie</h2>
+                    <p class="service__subtext">Diagnostika a léčba epilepsie a laboratorní monitoring pacientů, diagnostika a konzervativní terapie lehčích dysfunkcí mozku a míchy.</p>
+                </li>
+                <li class="service__item service__item--urol">
+                    <h2 class="service__text">Urologie, Nefrologie</h2>
+                    <p class="service__subtext">Klinická, laboratorní, RTG a sonografická diagnostika onemocnění močových cest, ledvin a prostaty.</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item">Veterinární klinika s. r. o., Na Plískavě 106/21, Praha - Hostivař, 122 00, IČO: 27276077, DIČ: CZ27276077</li>
+            <li class="footer__item">Design/Programování: Leona Jurtíková,
+                <a class='footer__link'href="https://www.leacode.cz/" target="_blank" class="footer_link">leacode.cz</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
